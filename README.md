@@ -57,32 +57,6 @@ npm start
 
 The app will run on [http://localhost:3000](http://localhost:3000).
 
-### Deploying to Azure
-
-This project is configured to be deployed on Azure Static Web Apps using GitHub Actions. Follow these steps to deploy:
-
-1. **Secrets Configuration:**
-   - Go to your GitHub repository's `Settings` > `Secrets and variables` > `Actions`.
-   - Add the following secrets:
-     - `REACT_APP_AZURE_VISION_ENDPOINT`
-     - `REACT_APP_AZURE_VISION_KEY`
-     - `REACT_APP_OPENAI_API_KEY`
-
-2. **Workflow Configuration:**
-   - Ensure your `.github/workflows/azure-static-web-apps.yml` file is correctly configured for deployment.
-
-3. **Commit and Push:**
-   - Commit your changes and push to the `main` branch:
-     ```bash
-     git add .
-     git commit -m "Deploy to Azure"
-     git push origin main
-     ```
-
-4. **Monitor Deployment:**
-   - Go to the `Actions` tab in your GitHub repository to monitor the deployment process.
-   - Once the workflow completes, your application will be live on Azure.
-
 ## Usage
 
 1. **Analyze an Image:**
